@@ -1,0 +1,2 @@
+# Use the following command to generate images from a trajectory file.
+/<path_to_blender>/blender --background  --python /<dir>/indirect_exec.py -- /<path_to_scene>/scene.blend /<path_to_trajectory>/trajectory.csv offset_X offset_y offset_y Yaw_rotation 0 0 
