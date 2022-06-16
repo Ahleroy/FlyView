@@ -45,7 +45,8 @@ You can cite our paper using the following bibtex :
 The dataset will be fully released on Zenodo and HuggingFace.
 
 ### Sample
-A dataset sample can be downloaded here : Link not available
+A dataset sample can be downloaded here : https://doi.org/10.5281/zenodo.6653770
+
 The dataset sample contains an example trajectory in a simple scene. 
 
 ## Code
