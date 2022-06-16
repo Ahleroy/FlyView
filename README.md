@@ -5,6 +5,14 @@ This repository is an additional reference for the FlyView paper.
 
 ## Content of the repository
 
+### Data generator
+
+The script located in `data_generator` allows to load a blender process in the background, load the trajectory from a CSV file, apply the static transform (X, Y, Z + Yaw rotation) and generate the data.
+
+The command to run the `Data Generator` is located in the `data_generator/command.txt` file.
+
+### 
+
 ## Paper
 
 The pre-print paper is available here : Link not added
