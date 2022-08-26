@@ -55,10 +55,50 @@ The following scripts are included in the repository :
 - Generate data with Blender using Python in `datagenerator`
 - Load and visualize data in `data_loader`
 
-## Licence
-We do not own the right on the 3D assets we used. For each individual Blender scene, please refer to the source for more information.
+## Generation Pipeline
+
+### Inputs-Outputs
+
+The data generation pipeline requires the following :
+ - A CSV file containing the position of the camera system for each frame. The CSV file must contain a header `(X, Y, Z, q_w, q_x, q_y, q_z)` and each line represents a keyframe position and attitude.
+ - A blender file in which the camera system is attached to a parent frame named `CamerasFrame`.
+ - Output directories created and specified in the `OutputFile` nodes located in the `Compositing` tab of the Blender file. This is a manual step to do once for each blender environment that was not automated.
+
+ When launching the data generation, the pipeline will generate the data in the output directories described above. In the first directory, the PNG images will be saved in a 16bits format. In the second directory, the Depth and Motion Flow will be saved in a single EXR file for each frame. See the `EXRFile` class located in the `data_loader` folder to read the file. An example to use it is located in `data_loader/scripts/visualize_data.py`.
+
+ ### Modifying the trajectory
+
+To modify the trajectory, you must generate your own in a CSV file in the format presented above (Header + `(X, Y, Z, q_w, q_x, q_y, q_z)` coordinates for each keyframe). The example scene `S10` uploaded on Zenodo provides a sample of a trajectory file.
+
+### Modify the Environment
+
+You can use any environment/scene to generate data with the current pipeline following these steps :
+
+1 - In the new scene, you will need to add the `CameraFrame` existing in our example scene. You can directly copy and paste the entire frame (and its cameras) to your new scene.
+
+2 - Add the nodes that are located in the `Compositing` tab of the example scene to your own `Compositing` tab. Do not forget to tick the `Use Nodes` box.
+
+3 - Define the output directories as defined above
+
+4 - In the `Output Properties` tab, make sure that the box `Stereoscopy` is ticked and to use the `Multi-view` option. Create and select the camera you want to use for the data generation. Because Blender 2.93 LTS fails to correctly generate the motion flow with multiple cameras at once, do make sure to have a single camera selected in this tab. We gave the following suffix to our cameras; Left => `_FishEye_Left`; Right => `_FishEye_right`; Panoramic => `_FishEye_Center_EquiRect`
+
+5 - In the `Output Properties` tab, give a temporary directory to the `Output` option. This will prevent Blender from generating undesired files in your output directories.
+
+### Modifying the Camera system
+
+You can change each camera model by selecting the camera in the `CameraFrame` parent object. Then, in the `Object Data Properties` tab (green camera symbol), you can change the type of camera and its field of view.
+
+You can change the image resolution in the `Output properties` tab.
+
+Finally, you can directly modify the position of the cameras within the camera system by modifying the `Transform` in the `Object Properties` tab (Orange square). In particular, the baseline between the stereo cameras is located on the Y axis.
+
+
+
 
 ## 3D Assets
+
+### Licence
+We do not own the right on the 3D assets we used. For each individual Blender scene, please refer to the source for more information.
 
 ### Barber shop
 - Author : blender.org
