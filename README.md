@@ -25,24 +25,33 @@ https://www.lfd.uci.edu/~gohlke/pythonlibs/
 
 ## Paper
 
-The pre-print paper is available here : Link not available yet
-The published paper is available here : Link not available yet
-The supplementary material is available here : Link not available yet
+The official NeurIPS 2022 link is available here: https://proceedings.neurips.cc/paper_files/paper/2022/hash/b4005da5affc3ba527dcb992495ecd20-Abstract-Datasets_and_Benchmarks.html
+The published paper is available here: https://proceedings.neurips.cc/paper_files/paper/2022/file/b4005da5affc3ba527dcb992495ecd20-Paper-Datasets_and_Benchmarks.pdf
+The supplementary material is available here : https://proceedings.neurips.cc/paper_files/paper/2022/file/b4005da5affc3ba527dcb992495ecd20-Supplemental-Datasets_and_Benchmarks.zip
 
 You can cite our paper using the following bibtex :
 
 ```
-@article{Leroy2022,
-	title = FlyView: a bio-inspired optical flow truth dataset for visual navigation using panoramic stereo vision,
-	author = {Alix Leroy, Graham K. Taylor},
-	year = {2022},
-	keywords = {Optical flow, Ego-motion, Self-motion, Bioinspiration, optic flow,  visual navigation},
+@inproceedings{Leroy2022,
+ author = {Leroy, Alix and Taylor, Graham W},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {28110--28124},
+ publisher = {Curran Associates, Inc.},
+ title = {FlyView: a bio-informed optical flow truth dataset for visual navigation using panoramic stereo vision},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/b4005da5affc3ba527dcb992495ecd20-Paper-Datasets_and_Benchmarks.pdf},
+ volume = {35},
+ year = {2022}
 }
+
 ```
 
 ## Dataset
 
-The dataset will be fully released on Zenodo and HuggingFace.
+NEW: THE DATASET WILL BE PUBLICLY RELEASED ON Nov. 30 2023. BOTH FLYVIEW AND ITS NATURAL DATASETS CAPTURED IN THE FLIGHT ARENA WILL BE RELEASED ON THAT DATE.
+
+The dataset will be fully released on HuggingFace. Due to storage limitations on Zenodo, we cannot upload the entire dataset on this platform.
+We are also exploring the upload of the data on Kaggle.
 
 ### Sample
 A dataset sample can be downloaded here : https://doi.org/10.5281/zenodo.6653770
