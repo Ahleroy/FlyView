@@ -25,9 +25,14 @@ https://www.lfd.uci.edu/~gohlke/pythonlibs/
 
 ## Paper
 
-The official NeurIPS 2022 link is available here: https://proceedings.neurips.cc/paper_files/paper/2022/hash/b4005da5affc3ba527dcb992495ecd20-Abstract-Datasets_and_Benchmarks.html
-The published paper is available here: https://proceedings.neurips.cc/paper_files/paper/2022/file/b4005da5affc3ba527dcb992495ecd20-Paper-Datasets_and_Benchmarks.pdf
-The supplementary material is available here : https://proceedings.neurips.cc/paper_files/paper/2022/file/b4005da5affc3ba527dcb992495ecd20-Supplemental-Datasets_and_Benchmarks.zip
+The official NeurIPS 2022 link is available here: 
+https://proceedings.neurips.cc/paper_files/paper/2022/hash/b4005da5affc3ba527dcb992495ecd20-Abstract-Datasets_and_Benchmarks.html
+
+The published paper is available here:
+https://proceedings.neurips.cc/paper_files/paper/2022/file/b4005da5affc3ba527dcb992495ecd20-Paper-Datasets_and_Benchmarks.pdf
+
+The supplementary material is available here: 
+https://proceedings.neurips.cc/paper_files/paper/2022/file/b4005da5affc3ba527dcb992495ecd20-Supplemental-Datasets_and_Benchmarks.zip
 
 You can cite our paper using the following bibtex :
 
