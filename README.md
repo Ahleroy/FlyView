@@ -53,9 +53,13 @@ You can cite our paper using the following bibtex :
 
 ## Dataset
 
-NEW: THE DATASET WILL BE PUBLICLY RELEASED ON Nov. 30 2023. BOTH FLYVIEW AND ITS NATURAL DATASETS CAPTURED IN THE FLIGHT ARENA WILL BE RELEASED ON THAT DATE.
+The dataset is fully released on HuggingFace.
 
-The dataset will be fully released on HuggingFace. Due to storage limitations on Zenodo, we cannot upload the entire dataset on this platform.
+Synthetic dataset: https://huggingface.co/datasets/aleroy/FlyView
+
+Natural dataset: https://huggingface.co/datasets/aleroy/flyview_natural 
+
+Due to storage limitations on Zenodo, we cannot upload the entire dataset on this platform.
 We are also exploring the upload of the data on Kaggle.
 
 ### Sample
